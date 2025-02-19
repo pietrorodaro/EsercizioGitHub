@@ -6,6 +6,8 @@ using System.Windows.Media.Media3D;
 
 namespace WpfAppAlbergo
 {
+
+    //Edit apportato da github
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
