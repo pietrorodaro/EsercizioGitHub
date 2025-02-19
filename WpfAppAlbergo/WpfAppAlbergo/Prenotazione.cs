@@ -31,7 +31,6 @@ namespace WpfAppAlbergo
         public DateOnly DataInizio { get => dataInizio; set => dataInizio = value; }
         public DateOnly DataFine { get => dataFine; set => dataFine = value; }
         public int Caparra { get => caparra; set => caparra = value; }
-        public string Trattamento { get => trattamento; set => trattamento = value; }
         public Camera Camera { get => camera; set => camera = value; }
         public Cliente Cliente { get => cliente; set => cliente = value; }
         public int Tariffa { get => tariffa; set => tariffa = value; }

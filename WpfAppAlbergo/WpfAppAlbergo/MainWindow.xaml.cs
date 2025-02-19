@@ -71,12 +71,14 @@ namespace WpfAppAlbergo
 
             bool flag = false;
             int camera = int.Parse(CameraTextBox.Text);
+            Camera cameraFR = null;
 
             foreach (Camera c in camereList)
             {
                 if (c.Numero == camera)
                 {
                     flag = true;
+                    cameraFR = c;
                 }
             }
 
@@ -88,12 +90,14 @@ namespace WpfAppAlbergo
 
             flag = false;
             string codiceFiscale = ClienteTextBox.Text;
+            Cliente clienteFR = null;
 
             foreach (Cliente c in clientiList)
             {
                 if (c.CodiceFiscale == codiceFiscale)
                 {
                     flag = true;
+                    clienteFR = c;
                 }
             }
 
@@ -104,7 +108,7 @@ namespace WpfAppAlbergo
             }
 
             // Crea una nuova Prenotazione
-            Prenotazione prenotazione = new Prenotazione(camera, codiceFiscale, dataPrenotazione, dataInizio, dataFine);
+            Prenotazione prenotazione = new Prenotazione(cameraFR, clienteFR, dataPrenotazione, dataInizio, dataFine);
 
             prenotazioneList.Add(prenotazione);
 
