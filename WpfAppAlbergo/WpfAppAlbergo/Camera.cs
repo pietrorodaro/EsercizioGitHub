@@ -6,7 +6,22 @@ using System.Threading.Tasks;
 
 namespace WpfAppAlbergo
 {
-    internal class Camera
+    public class Camera
     {
+        private int numero;
+        private string descrizione;
+        private string tipologia;
+
+        public int Numero { get => numero; set => numero = value; }
+        public string Descrizione { get => descrizione; set => descrizione = value; }
+        public string Tipologia { get => tipologia; set => tipologia = value; }
+
+        // Costruttore
+        public Camera(int numero, string descrizione, string tipologia)
+        {
+            this.numero = numero;
+            this.descrizione = descrizione;
+            this.tipologia = tipologia;
+        }
     }
 }
