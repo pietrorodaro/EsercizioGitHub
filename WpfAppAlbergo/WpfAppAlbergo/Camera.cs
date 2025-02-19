@@ -8,6 +8,7 @@ namespace WpfAppAlbergo
 {
     public class Camera
     {
+        //Variabili
         private int numero;
         private string descrizione;
         private string tipologia;
